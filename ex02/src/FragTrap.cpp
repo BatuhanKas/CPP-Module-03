@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 17:23:00 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 18:16:46 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/03 18:41:19 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,3 +73,12 @@ void FragTrap::war(FragTrap &oth) {
 }
 
 /* ****************************** [^] WAR [^] ****************************** */
+
+/* ************************* [v] HIGH FIVES GUY [v] ************************* */
+
+void FragTrap::highFivesGuy(void) {
+    cout << LIGHT_GREEN << getName() << " FragTrap gives a massive high five!"
+         << RESET << endl;
+}
+
+/* ************************* [^] HIGH FIVES GUY [^] ************************* */

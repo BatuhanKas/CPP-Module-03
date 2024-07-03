@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 10:12:58 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 18:34:10 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/03 18:48:54 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int main() {
     cout << YELLOW
          << "/* **************** [v] CLAPTRAPS [v] **************** */" << RESET
          << endl;
-    ClapTrap c1("batu");
-    ClapTrap c2("melih");
+    ClapTrap c1("Batu");
+    ClapTrap c2("Melih");
     c1.war(c2);
     c1.display();
     c2.display();
@@ -40,8 +40,8 @@ int main() {
     cout << YELLOW
          << "/* **************** [v] SCAVTRAPS [v] **************** */" << RESET
          << endl;
-    ScavTrap s1("batu");
-    ScavTrap s2("ati");
+    ScavTrap s1("Batu");
+    ScavTrap s2("Ati");
     s1.war(s2);
     s1.display();
     s2.display();
@@ -66,8 +66,8 @@ int main() {
     cout << YELLOW
          << "/* **************** [v] FRAGTRAPS [v] **************** */" << RESET
          << endl;
-    FragTrap f1("batu");
-    FragTrap f2("fiko");
+    FragTrap f1("Batu");
+    FragTrap f2("Fiko");
     f2.display();
     f1.war(f2);
     f2.display();
@@ -78,6 +78,7 @@ int main() {
     f1.war(f2);
     f2.display();
     f1.display();
+    f1.highFivesGuy();
     cout << YELLOW
          << "/* **************** [^] FRAGTRAPS [^] **************** */" << RESET
          << endl;

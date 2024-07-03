@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 10:12:57 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 18:25:48 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/03 18:41:00 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #define CLAPTRAP_HPP
 
 #define YELLOW "\033[1;33m"
+#define LIGHT_GREEN "\033[1;32m"
 #define WHITE "\033[1;37m"
 #define RED "\033[0;31m"
 #define GREEN "\033[0;32m"

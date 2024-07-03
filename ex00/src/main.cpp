@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 10:12:58 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 17:02:53 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/03 18:46:01 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,21 @@
 /* ****************************** [v] MAIN [v] ****************************** */
 
 int main() {
-    ClapTrap c1("batu");
-    ClapTrap c2("melih");
+    /* ****** [v] CLAPTRAPS [v] ****** */
+    cout << YELLOW
+         << "/* **************** [v] CLAPTRAPS [v] **************** */" << RESET
+         << endl;
+    ClapTrap c1("Batu");
+    ClapTrap c2("Melih");
     c1.war(c2);
-    c1.beRepaired(5);
     c1.display();
     c2.display();
+    c1.beRepaired(5);
+    c1.display();
+    cout << YELLOW
+         << "/* **************** [^] CLAPTRAPS [^] **************** */" << RESET
+         << endl;
+    /* ****** [^] CLAPTRAPS [^] ****** */
 }
 
 /* ****************************** [^] MAIN [^] ****************************** */
