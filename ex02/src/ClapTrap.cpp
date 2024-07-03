@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 10:18:19 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 17:03:30 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/03 18:28:36 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,9 +91,10 @@ void ClapTrap::attack(const string &target) {
 
 void ClapTrap::takeDamage(unsigned int amount) {
     if (getHp() > 0) {
-        hp -= amount;
         cout << RED << name << " take " << damage << " points of damage!"
              << RESET << endl;
+        hp -= amount;
+        if (hp <= 0) setHp(0);
     } else {
         cout << WHITE << getName() << " don't have enough hp!" << RESET << endl;
     }
@@ -129,7 +130,6 @@ void ClapTrap::war(ClapTrap &oth) {
     if (getHp() > 0 && oth.getHp() > 0 && getEnergy() > 0) {
         attack(oth.getName());
         oth.takeDamage(getDamage());
-        oth.setHp(oth.getHp() - getDamage());
     } else {
         cout << WHITE << getName() << " don't have enough hp or energy!"
              << RESET << endl;

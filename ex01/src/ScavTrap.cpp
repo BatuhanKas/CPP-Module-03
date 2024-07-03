@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 14:46:51 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 17:07:34 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/03 18:15:02 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,6 @@ void ScavTrap::war(ScavTrap &oth) {
     if (getHp() > 0 && oth.getHp() > 0 && getEnergy() > 0) {
         attack(oth.getName());
         oth.takeDamage(getDamage());
-        oth.setHp(oth.getHp() - getDamage());
     } else {
         if (getHp() <= 0 || getEnergy() <= 0)
             cout << WHITE << getName() << " don't have enough hp or energy!"

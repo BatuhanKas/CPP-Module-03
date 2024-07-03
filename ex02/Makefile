@@ -6,15 +6,15 @@
 #    By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/10 16:55:08 by bkas              #+#    #+#              #
-#    Updated: 2024/07/03 17:06:12 by bkas             ###   ########.fr        #
+#    Updated: 2024/07/03 17:52:03 by bkas             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME        = scavTrap
+NAME        = fragTrap
 
-PROJECTNAME = ScavTrap
+PROJECTNAME = FragTrap
 
-SRC         = main.cpp ClapTrap.cpp ScavTrap.cpp
+SRC         = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 SRCDIR      = ./src/
 
