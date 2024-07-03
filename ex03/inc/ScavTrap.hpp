@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 14:46:53 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 19:02:24 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/03 20:19:57 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* **************************** [v] DEFINES [v] **************************** */
 
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#ifndef SCAVTRAP_HPP
+#define SCAVTRAP_HPP
 
 /* **************************** [^] DEFINES [^] **************************** */
 
@@ -25,18 +25,18 @@
 
 /* ************************* [v] DERIVED CLASS [v] ************************* */
 
-class FragTrap : public ClapTrap {
+class ScavTrap : virtual public ClapTrap {
    public:
     // Orthodox Form
-    FragTrap();
-    FragTrap(string _name);
-    FragTrap(const FragTrap &oth);
-    FragTrap &operator=(const FragTrap &oth);
-    ~FragTrap();
+    ScavTrap();
+    ScavTrap(string _name);
+    ScavTrap(const ScavTrap &oth);
+    ScavTrap &operator=(const ScavTrap &oth);
+    ~ScavTrap();
     // Functions
     void attack(const string &target);
-    void war(FragTrap &oth);
-    void highFivesGuy(void);
+    void war(ScavTrap &oth);
+    void guardGate();
 };
 
 /* ************************* [^] DERIVED CLASS [^] ************************* */

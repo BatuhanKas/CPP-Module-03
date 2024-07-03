@@ -6,14 +6,13 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 10:12:58 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 19:02:26 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/03 20:47:25 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* **************************** [v] INCLUDES [v] **************************** */
 
-#include "../inc/FragTrap.hpp"
-#include "../inc/ScavTrap.hpp"
+#include "../inc/DiamondTrap.hpp"
 
 /* **************************** [^] INCLUDES [^] **************************** */
 
@@ -83,6 +82,19 @@ int main() {
          << "/* **************** [^] FRAGTRAPS [^] **************** */" << RESET
          << endl;
     /* ****** [^] FRAGTRAPS [^] ****** */
+
+    /* ****** [v] DIAMONDTRAPS [v] ****** */
+    cout << YELLOW
+         << "/* **************** [v] DIAMONDTRAPS [v] **************** */"
+         << RESET << endl;
+    DiamondTrap d1("Batu");
+    DiamondTrap d2("Maksut");
+    d1.display();
+    d2.display();
+    cout << YELLOW
+         << "/* **************** [^] DIAMONDTRAPS [^] **************** */"
+         << RESET << endl;
+    /* ****** [^] DIAMONDTRAPS [^] ****** */
 }
 
 /* ****************************** [^] MAIN [^] ****************************** */

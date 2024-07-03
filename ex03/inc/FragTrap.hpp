@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 14:46:53 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 19:02:24 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/03 20:22:17 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 
 /* ************************* [v] DERIVED CLASS [v] ************************* */
 
-class FragTrap : public ClapTrap {
+class FragTrap : virtual public ClapTrap {
    public:
     // Orthodox Form
     FragTrap();

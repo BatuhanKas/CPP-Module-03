@@ -1,42 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/03 14:46:53 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 19:02:24 by bkas             ###   ########.fr       */
+/*   Created: 2024/07/03 19:03:32 by bkas              #+#    #+#             */
+/*   Updated: 2024/07/03 20:47:26 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /* **************************** [v] DEFINES [v] **************************** */
 
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#ifndef DIAMONDTRAP_HPP
+#define DIAMONDTRAP_HPP
 
 /* **************************** [^] DEFINES [^] **************************** */
 
 /* *************************** [v] INCLUDES [v]  *************************** */
 
-#include "ClapTrap.hpp"
+#include "FragTrap.hpp"
+#include "ScavTrap.hpp"
 
 /* *************************** [^] INCLUDES [^]  *************************** */
 
 /* ************************* [v] DERIVED CLASS [v] ************************* */
 
-class FragTrap : public ClapTrap {
+class DiamondTrap : public FragTrap, public ScavTrap {
+   private:
+    string name;
+
    public:
     // Orthodox Form
-    FragTrap();
-    FragTrap(string _name);
-    FragTrap(const FragTrap &oth);
-    FragTrap &operator=(const FragTrap &oth);
-    ~FragTrap();
+    DiamondTrap();
+    DiamondTrap(string _name);
+    DiamondTrap(const DiamondTrap &oth);
+    DiamondTrap &operator=(const DiamondTrap &oth);
+    ~DiamondTrap();
+
+    // Set & Get
+    void setDiaName(const string name);
+    string getDiaName() const;
+
     // Functions
+    void war(DiamondTrap &oth);
     void attack(const string &target);
-    void war(FragTrap &oth);
-    void highFivesGuy(void);
+    void whoAmI();
+    void display();
 };
 
 /* ************************* [^] DERIVED CLASS [^] ************************* */
