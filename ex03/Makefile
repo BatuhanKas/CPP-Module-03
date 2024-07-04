@@ -6,7 +6,7 @@
 #    By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/10 16:55:08 by bkas              #+#    #+#              #
-#    Updated: 2024/07/04 10:13:54 by bkas             ###   ########.fr        #
+#    Updated: 2024/07/04 13:30:18 by bkas             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ OBJ         = $(addprefix $(OBJDIR)/, $(addsuffix .o, $(BASE)))
 
 BASE        = $(basename $(notdir $(SRC)))
 
-CC          = c++ -Wall -Wextra -Werror -std=c++98
+CC          = c++ -Wall -Wextra -Werror -std=c++98 #-Wshadow -Wno-shadow
 
 CFLAGS      = -g
 
