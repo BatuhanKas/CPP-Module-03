@@ -26,7 +26,7 @@ Eger biz bir class’i virtual olarak inheritence alirsak, ayni 2 class’in ça
 ```
 class  A {
 public:
-	int value;
+ int value;
 };
 
 class  B : public A {};
@@ -48,7 +48,7 @@ Virtual inheritance, C++'ta kullanılan ve birden fazla miras alınan sınıflar
 ```
 class  A {
 public:
-	int value;
+ int value;
 };
 
 class  B : virtual public A {};
