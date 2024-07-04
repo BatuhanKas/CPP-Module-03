@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 19:03:41 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/04 10:20:52 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/04 11:47:07 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ DiamondTrap::DiamondTrap() {
 DiamondTrap::DiamondTrap(string _name)
     : ClapTrap::ClapTrap(_name + "_clap_name") {
     setDiaName(_name);
-    setHp(FragTrap::getHp());
-    setEnergy(ScavTrap::getEnergy());
-    setDamage(FragTrap::getDamage());
+    setHp(100);
+    setEnergy(50);
+    setDamage(30);
     cout << "Diamond Constructor Worked" << endl;
 }
 
@@ -81,8 +81,8 @@ void DiamondTrap::war(DiamondTrap &oth) {
 /* **************************** [v] WHOAMI [v] **************************** */
 
 void DiamondTrap::whoAmI() {
-    cout << "Diamond Name is:" << getDiaName() << endl;
-    cout << "ClapTrap name is: " << ClapTrap::getName() << endl;
+    cout << GREEN << "My Diamond Name is: " << getDiaName() << endl;
+    cout << "My ClapTrap name is: " << ClapTrap::getName() << RESET << endl;
 }
 
 /* **************************** [^] WHOAMI [^] **************************** */

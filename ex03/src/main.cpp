@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 10:12:58 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/04 10:15:39 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/04 11:47:32 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,14 +85,23 @@ int main() {
 
     /* ****** [v] DIAMONDTRAPS [v] ****** */
     cout << YELLOW
-         << "/* **************** [v] DMNDTRAPS [v] **************** */" << RESET
+         << "/* **************** [v] DIA-TRAPS [v] **************** */" << RESET
          << endl;
     DiamondTrap d1("Batu");
     DiamondTrap d2("Maksut");
     d1.display();
     d2.display();
+    d1.war(d2);
+    d2.display();
+    d1.war(d2);
+    d2.display();
+    d1.war(d2);
+    d2.display();
+    d1.war(d2);
+    d2.display();
+    d1.whoAmI();
     cout << YELLOW
-         << "/* **************** [^] DMNDTRAPS [^] **************** */" << RESET
+         << "/* **************** [^] DIA-TRAPS [^] **************** */" << RESET
          << endl;
     /* ****** [^] DIAMONDTRAPS [^] ****** */
 }
