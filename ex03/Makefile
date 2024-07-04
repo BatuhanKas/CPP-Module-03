@@ -6,15 +6,15 @@
 #    By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/10 16:55:08 by bkas              #+#    #+#              #
-#    Updated: 2024/07/03 17:52:03 by bkas             ###   ########.fr        #
+#    Updated: 2024/07/04 10:13:54 by bkas             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME        = fragTrap
+NAME        = diamondTrap
 
-PROJECTNAME = FragTrap
+PROJECTNAME = DiamondTrap
 
-SRC         = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
+SRC         = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 
 SRCDIR      = ./src/
 

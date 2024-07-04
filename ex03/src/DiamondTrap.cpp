@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 19:03:41 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 20:48:47 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/04 10:20:52 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ DiamondTrap::DiamondTrap(const DiamondTrap &oth) : ClapTrap::ClapTrap(oth) {
 
 DiamondTrap &DiamondTrap::operator=(const DiamondTrap &oth) {
     if (this == &oth) return *this;
-    setDiaName(getDiaName());
+    setDiaName(oth.getDiaName());
     ClapTrap::operator=(oth);
     cout << "Diamond Operator Assignment Worked" << endl;
     return *this;
@@ -90,6 +90,7 @@ void DiamondTrap::whoAmI() {
 /* **************************** [v] DISPLAY [v] **************************** */
 
 void DiamondTrap::display() {
+    cout << WHITE << "-----------------" << RESET << endl;
     cout << WHITE << "Diamond Name:" << getDiaName() << RESET << endl;
     ClapTrap::display();
 }
