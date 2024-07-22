@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 17:23:00 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 18:41:19 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/22 16:47:05 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@
 
 /* ************************* [v] ORTHODOX FORM [v] ************************* */
 
-FragTrap::FragTrap() { cout << "Default FragTrap Constructor Worked." << endl; }
+FragTrap::FragTrap() : ClapTrap::ClapTrap("") {
+    cout << "Default FragTrap Constructor Worked." << endl;
+}
 
 FragTrap::FragTrap(string _name) : ClapTrap::ClapTrap(_name) {
     setInformation(_name, 100, 100, 30);

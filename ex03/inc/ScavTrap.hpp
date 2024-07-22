@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 14:46:53 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/04 12:25:55 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/22 16:49:41 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,11 @@
 /* ************************* [v] DERIVED CLASS [v] ************************* */
 
 class ScavTrap : virtual public ClapTrap {
+   private:
+    ScavTrap();
+
    public:
     // Orthodox Form
-    ScavTrap();
     ScavTrap(string _name);
     ScavTrap(const ScavTrap &oth);
     ScavTrap &operator=(const ScavTrap &oth);

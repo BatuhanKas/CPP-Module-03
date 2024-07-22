@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 10:18:19 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 18:28:36 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/22 16:44:54 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,10 @@ int ClapTrap::getDamage() const { return damage; }
 
 /* ************************ [v] ORTHODOX FORM [v] ************************ */
 
-ClapTrap::ClapTrap() { cout << "Default Constructor Called" << endl; }
+ClapTrap::ClapTrap() {
+    setName("");
+    cout << "Default Constructor Called" << endl;
+}
 
 void ClapTrap::setInformation(string _name, int _hp, int _energy, int _damage) {
     name = _name;

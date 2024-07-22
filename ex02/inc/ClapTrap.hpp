@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 10:12:57 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 18:41:00 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/22 16:43:57 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,12 +39,12 @@ using std::string;
 
 class ClapTrap {
    private:
+    ClapTrap();
     string name;
     int hp, energy, damage;
 
    public:
     // Orthodox Form
-    ClapTrap();
     ClapTrap(string _name);
     ClapTrap(const ClapTrap &oth);
     ClapTrap &operator=(const ClapTrap &oth);

@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 14:46:51 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/03 18:15:02 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/22 16:49:01 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@
 
 /* ************************* [v] ORTHODOX FORM [v] ************************* */
 
-ScavTrap::ScavTrap() { cout << "Default ScavTrap Constructor Called" << endl; }
+ScavTrap::ScavTrap() : ClapTrap::ClapTrap("") {
+    cout << "Default ScavTrap Constructor Called" << endl;
+}
 
 ScavTrap::ScavTrap(string _name) : ClapTrap::ClapTrap(_name) {
     setInformation(_name, 100, 50, 20);

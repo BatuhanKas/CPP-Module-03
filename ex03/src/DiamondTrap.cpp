@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 19:03:41 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/04 12:25:19 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/22 17:02:21 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,12 +26,16 @@ string DiamondTrap::getDiaName() const { return name; };
 
 /* ************************* [v] ORTHODOX FORM [v] ************************* */
 
-DiamondTrap::DiamondTrap() {
+DiamondTrap::DiamondTrap()
+    : ClapTrap::ClapTrap(""), FragTrap::FragTrap(""), ScavTrap::ScavTrap("") {
+    setDiaName("");
     cout << "Default Diamond Constructor Worked" << endl;
 }
 
 DiamondTrap::DiamondTrap(string _name)
-    : ClapTrap::ClapTrap(_name + "_clap_name") {
+    : ClapTrap::ClapTrap(_name + "_clap_name"),
+      FragTrap::FragTrap(_name),
+      ScavTrap::ScavTrap(_name) {
     setDiaName(_name);
     setHp(100);
     setEnergy(50);
@@ -39,7 +43,10 @@ DiamondTrap::DiamondTrap(string _name)
     cout << "Diamond Constructor Worked" << endl;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap &oth) : ClapTrap::ClapTrap(oth) {
+DiamondTrap::DiamondTrap(const DiamondTrap &oth)
+    : ClapTrap::ClapTrap(oth),
+      FragTrap::FragTrap(oth),
+      ScavTrap::ScavTrap(oth) {
     cout << "Diamond Copy Constructor Worked" << endl;
 }
 

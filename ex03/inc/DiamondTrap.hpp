@@ -6,7 +6,7 @@
 /*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/03 19:03:32 by bkas              #+#    #+#             */
-/*   Updated: 2024/07/04 13:31:24 by bkas             ###   ########.fr       */
+/*   Updated: 2024/07/22 16:52:11 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,10 @@
 class DiamondTrap : public FragTrap, public ScavTrap {
    private:
     string name;
+    DiamondTrap();
 
    public:
     // Orthodox Form
-    DiamondTrap();
     DiamondTrap(string _name);
     DiamondTrap(const DiamondTrap &oth);
     DiamondTrap &operator=(const DiamondTrap &oth);
