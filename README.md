@@ -23,7 +23,7 @@ Bu kismi anlamak icin ilk basta Virtual Inheritence nedir? Diamond Problemi nedi
 
 Eger biz bir class’i virtual olarak inheritence alirsak, ayni 2 class’in çakışmasını engellemiş oluruz. Eger biz bir Class’i virtual olarak miras almazsak normal olarak miras alirsak, ve ayni class’i birden fazla class’ta miras alirsak , Her iki class’inda icerisinde Base class’tan 2 tane olusmus gibi dusunebiliriz.
 
-```
+```c++
 class  A {
   public:
    int value;
@@ -45,7 +45,7 @@ Eger ben Su durumda D Classimdan A class’ina ulasmaya calisirsam compiler ambi
 
 Virtual inheritance, C++'ta kullanılan ve birden fazla miras alınan sınıflar arasında "diamond problem" olarak bilinen durumu çözen bir özelliktir. Bu problem, aynı temel sınıfın birden fazla yol üzerinden miras alınması durumunda, türetilmiş sınıfta bu temel sınıfın birden fazla kopyasının oluşmasıyla ortaya çıkar. Virtual inheritance, temel sınıfın yalnızca bir tane kopyasının oluşturulmasını sağlar.
 
-```
+```c++
 class  A {
   public:
    int value;
